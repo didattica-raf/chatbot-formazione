@@ -15,3 +15,9 @@ h1 {
     border-radius: 8px;
     padding: 10px;
 }
+
+.logo-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
