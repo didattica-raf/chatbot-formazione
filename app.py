@@ -18,8 +18,17 @@ def local_css(file_name):
 load_dotenv()
 local_css("style.css")
 
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="logo.gif">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Mostra il logo in cima alla pagina
-st.image("logo.gif", width=139)
+#st.image("logo.gif", width=139)
 
 # Streamlit UI setup
 st.set_page_config(page_title="Chat del Corso", page_icon="https://www.istitutoleopardi.it/wp-content/uploads/Leo-favicon-1.gif")
