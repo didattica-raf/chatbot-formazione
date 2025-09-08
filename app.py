@@ -14,7 +14,7 @@ from langchain.chat_models import ChatOpenAI
 load_dotenv()
 
 # Streamlit UI setup
-st.set_page_config(page_title="Chat del Corso", page_icon="📘")
+st.set_page_config(page_title="Chat del Corso", page_icon="https://www.istitutoleopardi.it/wp-content/uploads/Leo-favicon-1.gif")
 st.title("💬 Chatbot dei POF dell'Istituto Leopardi")
 st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF dei vari licei.")
 
