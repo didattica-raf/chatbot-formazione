@@ -15,8 +15,8 @@ load_dotenv()
 
 # Streamlit UI setup
 st.set_page_config(page_title="Chat del Corso", page_icon="📘")
-st.title("💬 Chatbot del Corso - Istituto Tecnico Economico")
-st.markdown("❓ Fai una domanda basata sul materiale caricato nel POF.")
+st.title("💬 Chatbot del Corso - Istituto Leopardi")
+st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF.")
 
 # Carica e processa più PDF
 @st.cache_resource
