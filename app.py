@@ -14,7 +14,7 @@ from langchain.chat_models import ChatOpenAI
 load_dotenv()
 
 # Mostra il logo in cima alla pagina
-st.image("logo.gif", width=200)
+st.image("logo.gif", width=139)
 
 # Streamlit UI setup
 st.set_page_config(page_title="Chat del Corso", page_icon="https://www.istitutoleopardi.it/wp-content/uploads/Leo-favicon-1.gif")
