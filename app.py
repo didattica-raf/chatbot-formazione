@@ -13,13 +13,13 @@ from langchain.chat_models import ChatOpenAI
 # Carica variabili ambiente
 load_dotenv()
 
+# Mostra il logo in cima alla pagina
+st.image("logo.gif", width=200)
+
 # Streamlit UI setup
 st.set_page_config(page_title="Chat del Corso", page_icon="https://www.istitutoleopardi.it/wp-content/uploads/Leo-favicon-1.gif")
 st.title("💬 Chatbot dei POF dell'Istituto Leopardi")
 st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF dei vari licei.")
-
-# Mostra il logo in cima alla pagina
-st.image("logo.gif", width=200)
 
 # Carica e processa più PDF
 @st.cache_resource
