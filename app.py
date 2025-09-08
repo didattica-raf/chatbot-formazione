@@ -24,8 +24,8 @@ def load_data():
     pdf_files = [
         "POFisttecnicoeconomico2024_25.pdf",
         "POFliceoeuropeo2024_25.pdf",
-        "POFliceolinguistico2024_25",
-        "POFliceoscienze_umane2024_25",
+        "POFliceolinguistico2024_25.pdf",
+        "POFliceoscienze_umane2024_25.pdf",
         "POFliceoscientifico2024_25.pdf"
     ]
     pages = []
