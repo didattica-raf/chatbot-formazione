@@ -21,7 +21,7 @@ local_css("style.css")
 st.markdown(
     """
     <div class="logo-container" width=139>
-        <img src="https://github.com/didattica-raf/chatbot-formazione/blob/main/logo.gif">
+        <img src="https://www.istitutoleopardi.it/wp-content/uploads/LEO-logo.gif">
     </div>
     """,
     unsafe_allow_html=True
