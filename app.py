@@ -18,11 +18,18 @@ st.set_page_config(page_title="Chat del Corso", page_icon="📘")
 st.title("💬 Chatbot del Corso - Istituto Tecnico Economico")
 st.markdown("❓ Fai una domanda basata sul materiale caricato nel POF.")
 
-# Carica e processa il PDF
+# Carica e processa più PDF
 @st.cache_resource
 def load_data():
-    loader = PyPDFLoader("POFisttecnicoeconomico2024_25.pdf")
-    pages = loader.load_and_split()
+    pdf_files = [
+        "POFisttecnicoeconomico2024_25.pdf",
+        "modulo1.pdf",
+        "documento2.pdf"
+    ]
+    pages = []
+    for pdf_file in pdf_files:
+        loader = PyPDFLoader(pdf_file)
+        pages.extend(loader.load_and_split())
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     docs = text_splitter.split_documents(pages)
     embeddings = OpenAIEmbeddings()
