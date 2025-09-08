@@ -18,6 +18,10 @@ st.set_page_config(page_title="Chat del Corso", page_icon="📘")
 st.title("💬 Chatbot del Corso - Istituto Leopardi")
 st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF.")
 
+with st.sidebar:
+    st.image("https://www.istitutoleopardi.it/wp-content/uploads/LEO-logo.gif", width=200)
+    st.markdown("Powered by Simo e Raffa")
+
 # Carica e processa più PDF
 @st.cache_resource
 def load_data():
