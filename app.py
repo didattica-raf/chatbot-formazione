@@ -15,8 +15,8 @@ load_dotenv()
 
 # Streamlit UI setup
 st.set_page_config(page_title="Chat del Corso", page_icon="📘")
-st.title("💬 Chatbot del Corso - Istituto Leopardi")
-st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF.")
+st.title("💬 Chatbot dei POF dell'Istituto Leopardi")
+st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF dei vari licei.")
 
 # Mostra il logo in cima alla pagina
 st.image("logo.gif", width=200)
