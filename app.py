@@ -10,8 +10,13 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 # Carica variabili ambiente
 load_dotenv()
+local_css("style.css")
 
 # Mostra il logo in cima alla pagina
 st.image("logo.gif", width=139)
