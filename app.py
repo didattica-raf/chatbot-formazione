@@ -2,6 +2,7 @@
 import streamlit as st
 from dotenv import load_dotenv
 import os
+api_key = os.getenv("OPENAI_API_KEY")  # oppure use st.secrets["OPENAI_API_KEY"]
 from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
