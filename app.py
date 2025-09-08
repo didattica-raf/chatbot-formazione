@@ -20,7 +20,7 @@ local_css("style.css")
 
 st.markdown(
     """
-    <div class="logo-container">
+    <div class="logo-container" width=139>
         <img src="logo.gif">
     </div>
     """,
