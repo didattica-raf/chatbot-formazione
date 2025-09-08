@@ -23,8 +23,10 @@ st.markdown("❓ Fai una domanda basata sul materiale caricato nel POF.")
 def load_data():
     pdf_files = [
         "POFisttecnicoeconomico2024_25.pdf",
-        "modulo1.pdf",
-        "documento2.pdf"
+        "POFliceoeuropeo2024_25.pdf",
+        "POFliceolinguistico2024_25",
+        "POFliceoscienze_umane2024_25",
+        "POFliceoscientifico2024_25.pdf"
     ]
     pages = []
     for pdf_file in pdf_files:
