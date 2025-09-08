@@ -19,7 +19,7 @@ st.title("💬 Chatbot del Corso - Istituto Leopardi")
 st.markdown("❓ Fai una domanda basata sul materiale caricato nei POF.")
 
 # Mostra il logo in cima alla pagina
-st.image("https://www.istitutoleopardi.it/wp-content/uploads/LEO-logo.gif", width=200)
+st.image("logo.gif", width=200)
 
 # Carica e processa più PDF
 @st.cache_resource
